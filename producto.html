@@ -7,7 +7,6 @@
     <title>Formulario-w5</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -18,97 +17,138 @@
         </div>
     </header>
     <!--seccion principal-->
-    <section>
+    <section class="container">
+
         <!--formulario-->
-        <div class="formulario">
-            <form class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4">
-                  <label for="validationCustom01" class="form-label">First name</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+        <form class="col-12 needs-validation" novalidate>
+          <div class="row mb-3">
+            <label for="codigo-producto" class="col-sm-2 col-form-label">CODIGO</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="codigo-producto" required>
+              <div class="valid-feedback">
+                Codigo ingresado
+              </div>
+              <div class="invalid-feedback">
+                Codigo requerido
+              </div>
+            </div>
+          </div>
+          
+          <div class="row mb-3">
+            <label for="descripcion" class="col-sm-2 col-form-label">DESCRIPCION</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="descripcion" required>
+              <div class="valid-feedback">
+                descripcion ingresada
+              </div>
+              <div class="invalid-feedback">
+                descripcion requerida
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="codigo-barras" class="col-sm-2 col-form-label">CODIGO DE BARRAS</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="codigo-barras" required>
+              <div class="valid-feedback">
+                Codigo ingresado
+              </div>
+              <div class="invalid-feedback">
+                Codigo requerido
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="input-group has-validation col-sm-10">
+              <label for="precio-uni" class="col-sm-2 col-form-label">PRECIO UNITARIO</label>
+              <span class="input-group-text">$</span>
+              <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+              <span class="input-group-text">.00</span>
+                <div class="valid-feedback">
+                  precio ingresado
                 </div>
-                <div class="col-md-4">
-                  <label for="validationCustom02" class="form-label">Last name</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                  <div class="valid-feedback">
-                    Looks good!
-                  </div>
+                <div class="invalid-feedback">
+                   precio requerido.
                 </div>
-                <div class="col-md-4">
-                  <label for="validationCustomUsername" class="form-label">Username</label>
-                  <div class="input-group has-validation">
-                    <span class="input-group-text" id="inputGroupPrepend">@</span>
-                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-                    <div class="invalid-feedback">
-                      Please choose a username.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">City</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid city.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom04" class="form-label">State</label>
-                  <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Choose...</option>
-                    <option>...</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    Please select a valid state.
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <label for="validationCustom05" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="validationCustom05" required>
-                  <div class="invalid-feedback">
-                    Please provide a valid zip.
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                    <label class="form-check-label" for="invalidCheck">
-                      Agree to terms and conditions
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Submit form</button>
-                </div>
-              </form>
-        </div>
+        
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="stock" class="col-sm-2 col-form-label">STOCK</label>
+            <div class="col-sm-10">
+              <input type="number" class="form-control" id="stock" required>
+              <div class="valid-feedback">
+                Cantidad ingresada.
+              </div>
+              <div class="invalid-feedback">
+                Cantidad requerida.
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="proveedor" class="col-sm-2 col-form-label">PROVEEDOR</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="proveedor" required>
+              <div class="valid-feedback">
+                proveedor
+              </div>
+              <div class="invalid-feedback">
+               Ingrese el nombre del proveedor,
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <label for="estado" class="col-sm-2 col-form-label">ESTADO</label>
+            <div class="col-sm-10">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">ACTIVO</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">INACTIVO</label>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="categoria" class="col-sm-2 col-form-label">CATEGORIA</label>
+            <div class="col-sm-10">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>categoria 1</option>
+                <option value="1">categoria 2</option>
+                <option value="2">categoria 3</option>
+                <option value="3">categoria 4</option>
+              </select>
+
+            </div>
+
+          </div>
+         
+         <div class="row mb-4">
+          <div class="col">
+            <button class="btn btn-primary" type="submit">GUARDAR
+            </button>
+          </div>   
+
+          <div class="col cancelar">
+            <button class="btn btn-primary" type="submit">CANCELAR</button>
+          </div>
+         </div>
+         
+        
+
+
+        </form>
+     
     </section>
+
     <!--seccion de javascript-->
-    <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-(function () {
-  'use strict'
-
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
-
-  // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
-        if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
-        }
-
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
-    </script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
