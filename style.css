@@ -42,3 +42,10 @@ body {
     margin: 1rem;
 
 }
+.footer {
+    padding: 1rem;
+    color: antiquewhite;
+    background-color: black;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
