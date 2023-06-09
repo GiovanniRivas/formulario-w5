@@ -10,8 +10,5 @@
     background-color: rgb(226, 216, 216);
     padding: 1.5em;
     color: rgb(24, 25, 26);
-}
-.cancelar {
-    display: flex;
-    justify-content: right;
+
 }
