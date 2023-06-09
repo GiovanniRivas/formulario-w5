@@ -61,19 +61,21 @@
           </div>
 
           <div class="row mb-3">
-            <div class="input-group has-validation col-sm-10">
+            <div  class="input-group has-validation col-sm-10">
               <label for="precio-uni" class="col-sm-2 col-form-label">PRECIO UNITARIO</label>
-              <span class="input-group-text">$</span>
-              <input type="number" class="form-control" placeholder="0." aria-label="Amount (to the nearest dollar)">
-              
-                <div class="valid-feedback">
-                  precio ingresado
-                </div>
-                <div class="invalid-feedback">
+                <span class="input-group-text">$</span>
+                <input type="number" class="form-control" placeholder="0." aria-label="Amount (to the nearest dollar)">
+                   <div class="valid-feedback">
+                    precio ingresado
+                   </div>
+                   <div class="invalid-feedback">
                    precio requerido.
-                </div>
-        
+                   </div>   
+                   
+             
+              
             </div>
+
           </div>
 
           <div class="row mb-3">
@@ -109,10 +111,7 @@
                 <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
                 <label class="form-check-label" for="inlineRadio1">ACTIVO</label>
               </div>
-              <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                <label class="form-check-label" for="inlineRadio2">INACTIVO</label>
-              </div>
+           
             </div>
           </div>
           <div class="row mb-3">
@@ -128,17 +127,24 @@
             </div>
 
           </div>
-         
-          <div class="col text-center">
+
+
+          <div class="col-12 ">
         
-              <button class="btn btn-primary" type="submit" >GUARDAR</button>
-              
-              <button class="btn btn-danger" type="reset" >CANCELAR</butto>
+            <button class="btn btn-primary" type="submit" id="guardar"> GUARDAR</button>
             
-         
-          </div>   
+          
+            
+            <button class="btn btn-danger float-end" type="reset" >CANCELAR</butto>
+          
+       
+           </div>  
+          
         
         </form>
+        <div>
+        
+        </div>
      
     </section>
 
